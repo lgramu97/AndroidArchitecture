@@ -65,6 +65,7 @@ fun getClientService(): ApiService {
     return  retrofit.create(ApiService::class.java)
 }
 
+* MODEL
 interface ApiService {
     @GET("getOffers/")
     fun getCoupons(): Call<JsonObject>
